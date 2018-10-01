@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_result"
+        style="@style/CustomResultCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_input_number"
+        style="@style/CustomResultCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:gravity="center_vertical|end"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_ac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_result" />
+
+    <TextView
+        android:id="@+id/text_input_ac"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/ac"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_seven"
+        app:layout_constraintEnd_toStartOf="@+id/text_change_addition_to_subtraction"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_number" />
+
+    <TextView
+        android:id="@+id/text_change_addition_to_subtraction"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/change_add_to_sub"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_eight"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_mod"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_ac"
+        app:layout_constraintTop_toTopOf="@+id/text_input_ac" />
+
+    <TextView
+        android:id="@+id/text_input_mod"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/mod"
+        app:layout_constraintBottom_toTopOf="@id/text_input_nine"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_divide"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_change_addition_to_subtraction"
+        app:layout_constraintTop_toTopOf="@+id/text_input_ac"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
+        android:id="@+id/text_input_divide"
+        style="@style/CustomButtonCaculatorOrange"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/division"
+        app:layout_constraintBottom_toTopOf="@id/text_input_multi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_mod"
+        app:layout_constraintTop_toTopOf="@+id/text_input_ac"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
+        android:id="@+id/text_input_seven"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_seven"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_four"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_eight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_ac" />
+
+    <TextView
+        android:id="@+id/text_input_eight"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_eight"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_seven"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_nine"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_seven"
+        app:layout_constraintTop_toTopOf="@+id/text_input_seven" />
+
+    <TextView
+        android:id="@+id/text_input_nine"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_nine"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_seven"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_multi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_eight"
+        app:layout_constraintTop_toTopOf="@+id/text_input_seven" />
+
+    <TextView
+        android:id="@+id/text_input_multi"
+        style="@style/CustomButtonCaculatorOrange"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="0dp"
+        android:text="@string/mutiplication"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_nine"
+        app:layout_constraintTop_toTopOf="@+id/text_input_seven" />
+
+    <TextView
+        android:id="@+id/text_input_four"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+
+        android:text="@string/number_four"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_one"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_five"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_seven" />
+
+    <TextView
+        android:id="@+id/text_input_five"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_five"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_four"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_six"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_four"
+        app:layout_constraintTop_toTopOf="@id/text_input_four" />
+
+    <TextView
+        android:id="@+id/text_input_six"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_six"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_four"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_subtract"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_five"
+        app:layout_constraintTop_toTopOf="@id/text_input_four" />
+
+    <TextView
+        android:id="@+id/text_input_subtract"
+        style="@style/CustomButtonCaculatorOrange"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/subtraction"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_four"
+        app:layout_constraintEnd_toEndOf="@+id/text_result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_six"
+        app:layout_constraintTop_toTopOf="@id/text_input_four" />
+
+    <TextView
+        android:id="@+id/text_input_one"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_one"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_zezo"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_four" />
+
+    <TextView
+        android:id="@+id/text_input_two"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_two"
+        app:layout_constraintBottom_toBottomOf="@+id/text_input_one"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_three"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_one"
+        app:layout_constraintTop_toTopOf="@id/text_input_one" />
+
+    <TextView
+        android:id="@+id/text_input_three"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_three"
+        app:layout_constraintBottom_toBottomOf="@+id/text_input_one"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_add"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_two"
+        app:layout_constraintTop_toTopOf="@id/text_input_one" />
+
+    <TextView
+        android:id="@+id/text_input_add"
+        style="@style/CustomButtonCaculatorOrange"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/addition"
+
+        app:layout_constraintBottom_toBottomOf="@id/text_input_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_input_three"
+        app:layout_constraintTop_toTopOf="@id/text_input_one" />
+
+    <TextView
+        android:id="@+id/text_input_zezo"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/number_zezo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_dot"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_one" />
+
+    <TextView
+        android:id="@+id/text_input_dot"
+        style="@style/CustomButtonCaculator"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/dot"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_zezo"
+        app:layout_constraintEnd_toStartOf="@+id/text_input_result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/text_input_zezo"
+        app:layout_constraintTop_toTopOf="@id/text_input_zezo" />
+
+    <TextView
+        android:id="@+id/text_input_result"
+        style="@style/CustomButtonCaculatorOrange"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/result"
+        app:layout_constraintBottom_toBottomOf="@id/text_input_zezo"
+        app:layout_constraintEnd_toEndOf="@+id/text_result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/text_input_dot"
+        app:layout_constraintTop_toTopOf="@id/text_input_zezo" />
+
+</android.support.constraint.ConstraintLayout>
