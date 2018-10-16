@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoMvp</string>
+    <string name="text_total_wallpaper">Total Wallpaper :</string>
+    <string name="text_number_zezo">0</string>
+</resources>
